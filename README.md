@@ -2,11 +2,11 @@
 
 General documentation of my home network setup, including but not limited to 
 
-*Services
-*Routing \ Firewalls \ Networking
-*Hardening
-*Logging
-*Backup
+* Services
+* Routing \ Firewalls \ Networking
+* Hardening
+* Logging
+* Backup
 
 
 ## Services
