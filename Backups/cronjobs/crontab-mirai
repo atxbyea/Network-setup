@@ -1,0 +1,10 @@
+
+##Backup to jottacloud
+0 4 * * 1 rsync -a --exclude-from=/opt/rclone/excludes/docker-appsmount.txt /mnt/Storage6TB/appsmount/ /mnt/jottacloud/miraibackup/appsmount
+0 4 * * 3 rsync -a /mnt/Storage6TB/docker-compose/ /mnt/jottacloud/miraibackup/docker-compose
+0 4 * * 5 rsync -a /mnt/Storage/Felles-Owncloud /mnt/jottacloud/miraibackup/Felles-Owncloud
+
+##Backup to google drive
+0 4 * * 2 rsync -a --exclude-from=/opt/rclone/excludes/docker-appsmount.txt /mnt/Storage6TB/appsmount/ /mnt/googlecrypt/miraibackup/appsmount
+0 4 * * 4 rsync -a /mnt/Storage6TB/docker-compose/ /mnt/googlecrypt/miraibackup/docker-compose
+0 4 * * 6 rsync -a /mnt/Storage/Felles-Owncloud /mnt/googlecrypt/miraibackup/Felles-Owncloud
